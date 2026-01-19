@@ -5,140 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Menu Turístico Premium - Descubra os melhores eventos, parques, hotéis e gastronomia de Maringá">
     <meta name="theme-color" content="#001a4d">
-    <title>Menu Turístico Premium - Maringá</title>
+    <title>Menu Turístico Premium</title>
     
     <!-- Fontes Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Header/Navegação -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="container">
-                <div class="navbar-content">
-                    <!-- Logo -->
-                    <a href="#" class="logo">
-                        <div class="logo-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                <circle cx="12" cy="10" r="3"></circle>
-                            </svg>
-                        </div>
-                        <span>Menu Turístico</span>
-                    </a>
-                    
-                    <!-- Menu Principal -->
-                    <ul class="nav-menu">
-                        <li><a href="#eventos" class="nav-link">EVENTOS</a></li>
-                        <li><a href="#parques" class="nav-link">PARQUES</a></li>
-                        <li><a href="#hoteis" class="nav-link">HOTÉIS</a></li>
-                        <li><a href="#gastronomia" class="nav-link">GASTRONOMIA</a></li>
-                        <li><a href="#turismo" class="nav-link">TURISMO</a></li>
-                        <li><a href="#roteiros" class="nav-link">ROTEIROS</a></li>
-                    </ul>
-                    
-                    <!-- Informações e Botões -->
-                    <div class="navbar-right">
-                        <div class="weather-info">
-                            <span class="temperature">30°C</span>
-                            <span class="location">Maringá</span>
-                        </div>
-                        <div class="search-icon">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="11" cy="11" r="8"></circle>
-                                <path d="m21 21-4.35-4.35"></path>
-                            </svg>
-                        </div>
-                        <button class="btn-login">Login</button>
-                        <button class="btn-announce">Anunciar</button>
+    <!-- Header Transparente -->
+    <header class="header-transparent">
+        <div class="container-fluid">
+            <nav class="navbar">
+                <!-- Logo -->
+                <a href="#" class="logo">
+                    <div class="logo-circle">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
                     </div>
+                    <span class="logo-text">Menu<br>Turístico</span>
+                </a>
+                
+                <!-- Menu Central -->
+                <ul class="nav-menu-center">
+                    <li><a href="#eventos">EVENTOS</a></li>
+                    <li><a href="#parques">PARQUES</a></li>
+                    <li><a href="#hoteis">HOTÉIS</a></li>
+                    <li><a href="#gastronomia">GASTRONOMIA</a></li>
+                    <li><a href="#turismo">TURISMO</a></li>
+                    <li><a href="#roteiros">ROTEIROS</a></li>
+                </ul>
+                
+                <!-- Direita -->
+                <div class="nav-right">
+                    <div class="weather">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <span>30°C</span>
+                        <span class="city">Maringá</span>
+                    </div>
+                    <button class="btn-search">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <button class="btn-login">Login</button>
+                    <button class="btn-announce">Anunciar</button>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
 
-    <!-- Hero Slider -->
-    <section class="hero-slider">
-        <div class="slider-container">
+    <!-- Hero Slider Full Screen -->
+    <section class="hero-fullscreen">
+        <div class="slider-wrapper">
             <!-- Slide 1 -->
-            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200&h=600&fit=crop');">
-                <div class="slide-overlay"></div>
-                <div class="slide-content">
-                    <div class="slide-label">MENU TURÍSTICO PREMIUM</div>
-                    <h1 class="slide-title">Maringá Encantada</h1>
-                    <p class="slide-description">Descubra a magia da cidade canção iluminada à noite.</p>
-                    <div class="slide-buttons">
-                        <a href="#" class="btn btn-primary">Ver Eventos</a>
-                        <button class="btn btn-secondary">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                            </svg>
-                            Assistir Vídeo
-                        </button>
+            <div class="slide-full active">
+                <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&h=1080&fit=crop');"></div>
+                <div class="slide-overlay-gradient"></div>
+                <div class="container">
+                    <div class="slide-content-left">
+                        <span class="slide-label">MENU TURÍSTICO PREMIUM</span>
+                        <h1 class="slide-title-large">Maringá<br>Encantada</h1>
+                        <p class="slide-desc">Descubra a magia da cidade canção iluminada à noite.</p>
+                        <div class="slide-actions">
+                            <button class="btn-hero-primary">Ver Eventos</button>
+                            <button class="btn-hero-secondary">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                                Assistir Vídeo
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Slide 2 -->
-            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=600&fit=crop');">
-                <div class="slide-overlay"></div>
-                <div class="slide-content">
-                    <div class="slide-label">MENU TURÍSTICO PREMIUM</div>
-                    <h1 class="slide-title">Amanhecer Inspirador</h1>
-                    <p class="slide-description">Comece o dia explorando as belezas urbanas e naturais.</p>
-                    <div class="slide-buttons">
-                        <a href="#" class="btn btn-primary">Ver Roteiros</a>
-                        <button class="btn btn-secondary">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                            </svg>
-                            Assistir Vídeo
-                        </button>
+            <div class="slide-full">
+                <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=crop');"></div>
+                <div class="slide-overlay-gradient"></div>
+                <div class="container">
+                    <div class="slide-content-left">
+                        <span class="slide-label">MENU TURÍSTICO PREMIUM</span>
+                        <h1 class="slide-title-large">Amanhecer<br>Inspirador</h1>
+                        <p class="slide-desc">Comece o dia explorando as belezas urbanas e naturais.</p>
+                        <div class="slide-actions">
+                            <button class="btn-hero-primary">Ver Roteiros</button>
+                            <button class="btn-hero-secondary">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                                Assistir Vídeo
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Slide 3 -->
-            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&h=600&fit=crop');">
-                <div class="slide-overlay"></div>
-                <div class="slide-content">
-                    <div class="slide-label">MENU TURÍSTICO PREMIUM</div>
-                    <h1 class="slide-title">Natureza Exuberante</h1>
-                    <p class="slide-description">Relaxe e respire ar puro nos parques mais bonitos da região.</p>
-                    <div class="slide-buttons">
-                        <a href="#" class="btn btn-primary">Explorar Parques</a>
-                        <button class="btn btn-secondary">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                            </svg>
-                            Assistir Vídeo
-                        </button>
+            <div class="slide-full">
+                <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1920&h=1080&fit=crop');"></div>
+                <div class="slide-overlay-gradient"></div>
+                <div class="container">
+                    <div class="slide-content-left">
+                        <span class="slide-label">MENU TURÍSTICO PREMIUM</span>
+                        <h1 class="slide-title-large">Natureza<br>Exuberante</h1>
+                        <p class="slide-desc">Relaxe e respire ar puro nos parques mais bonitos da região.</p>
+                        <div class="slide-actions">
+                            <button class="btn-hero-primary">Explorar Parques</button>
+                            <button class="btn-hero-secondary">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                                Assistir Vídeo
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Controles do Slider -->
-            <button class="slider-btn slider-prev" onclick="changeSlide(-1)">
+            <!-- Controles -->
+            <button class="slider-control prev" onclick="changeSlide(-1)">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <polyline points="15 18 9 12 15 6"></polyline>
                 </svg>
             </button>
-            <button class="slider-btn slider-next" onclick="changeSlide(1)">
+            <button class="slider-control next" onclick="changeSlide(1)">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <polyline points="9 18 15 12 9 6"></polyline>
                 </svg>
             </button>
 
             <!-- Indicadores -->
-            <div class="slider-indicators">
-                <button class="indicator active" onclick="goToSlide(0)"></button>
-                <button class="indicator" onclick="goToSlide(1)"></button>
-                <button class="indicator" onclick="goToSlide(2)"></button>
+            <div class="slider-dots">
+                <button class="dot active" onclick="goToSlide(0)"></button>
+                <button class="dot" onclick="goToSlide(1)"></button>
+                <button class="dot" onclick="goToSlide(2)"></button>
             </div>
         </div>
     </section>
@@ -146,152 +164,186 @@
     <!-- Seção Explore Maringá -->
     <section class="explore-section">
         <div class="container">
-            <h2 class="section-title">Explore Maringá</h2>
-            <p class="section-subtitle">Tudo o que você precisa para aproveitar o melhor da cidade em um só lugar.</p>
+            <h2 class="section-title-center">Explore Maringá</h2>
+            <p class="section-subtitle-center">Tudo o que você precisa para aproveitar o melhor da cidade em um só lugar.</p>
             
-            <div class="cards-grid">
-                <!-- Card 1: Eventos -->
-                <div class="card card-events">
-                    <div class="card-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                            <line x1="16" y1="2" x2="16" y2="6"></line>
-                            <line x1="8" y1="2" x2="8" y2="6"></line>
-                            <line x1="3" y1="10" x2="21" y2="10"></line>
-                        </svg>
+            <div class="cards-explore-grid">
+                <!-- Card Eventos -->
+                <div class="card-explore card-eventos">
+                    <div class="card-explore-bg" style="background-image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&h=400&fit=crop');"></div>
+                    <div class="card-explore-overlay"></div>
+                    <div class="card-explore-content">
+                        <div class="card-icon-circle purple">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                        </div>
+                        <h3 class="card-explore-title">Eventos &<br>Shows</h3>
+                        <p class="card-explore-subtitle">Garanta seu ingresso agora</p>
+                        <button class="btn-card-explore purple">
+                            Comprar Ingressos
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
                     </div>
-                    <h3 class="card-title">Eventos & Shows</h3>
-                    <p class="card-description">Garanta seu ingresso agora</p>
-                    <button class="btn btn-card btn-card-events">Comprar Ingressos</button>
                 </div>
 
-                <!-- Card 2: Atrações -->
-                <div class="card card-attractions">
-                    <div class="card-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                            <circle cx="12" cy="10" r="3"></circle>
-                        </svg>
+                <!-- Card Atrações -->
+                <div class="card-explore card-atracoes">
+                    <div class="card-explore-bg" style="background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop');"></div>
+                    <div class="card-explore-overlay"></div>
+                    <div class="card-explore-content">
+                        <div class="card-icon-circle green">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-explore-title">Atrações<br>Turísticas</h3>
+                        <p class="card-explore-subtitle">Reserve passeios e experiências</p>
+                        <button class="btn-card-explore green">
+                            Reservar Passeio
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
                     </div>
-                    <h3 class="card-title">Atrações Turísticas</h3>
-                    <p class="card-description">Reserve passeios e experiências</p>
-                    <button class="btn btn-card btn-card-attractions">Reservar Passeio</button>
                 </div>
 
-                <!-- Card 3: Hotéis -->
-                <div class="card card-hotels">
-                    <div class="card-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M18 4v16H6V4m0 6h12M6 10h12"></path>
-                            <circle cx="8" cy="7" r="1"></circle>
-                            <circle cx="14" cy="7" r="1"></circle>
-                        </svg>
+                <!-- Card Hotéis -->
+                <div class="card-explore card-hoteis">
+                    <div class="card-explore-bg" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop');"></div>
+                    <div class="card-explore-overlay"></div>
+                    <div class="card-explore-content">
+                        <div class="card-icon-circle blue">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="card-explore-title">Hotéis<br>Premium</h3>
+                        <p class="card-explore-subtitle">Pague sua estadia online</p>
+                        <button class="btn-card-explore blue">
+                            Reservar Quarto
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
                     </div>
-                    <h3 class="card-title">Hotéis Premium</h3>
-                    <p class="card-description">Pague sua estadia online</p>
-                    <button class="btn btn-card btn-card-hotels">Reservar Quarto</button>
                 </div>
 
-                <!-- Card 4: Gastronomia -->
-                <div class="card card-gastronomy">
-                    <div class="card-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M3 2v7c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2V2"></path>
-                            <path d="M7 2v7"></path>
-                            <path d="M13 2v7c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2V2"></path>
-                            <path d="M17 2v7"></path>
-                        </svg>
+                <!-- Card Gastronomia -->
+                <div class="card-explore card-gastronomia">
+                    <div class="card-explore-bg" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop');"></div>
+                    <div class="card-explore-overlay"></div>
+                    <div class="card-explore-content">
+                        <div class="card-icon-circle orange">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"></path>
+                                <path d="M7 2v20"></path>
+                                <path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-explore-title">Gastronomia</h3>
+                        <p class="card-explore-subtitle">Compre vouchers e reserve</p>
+                        <button class="btn-card-explore orange">
+                            Comprar Voucher
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
                     </div>
-                    <h3 class="card-title">Gastronomia</h3>
-                    <p class="card-description">Compre vouchers e reserve</p>
-                    <button class="btn btn-card btn-card-gastronomy">Comprar Voucher</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção Destaque da Semana -->
-    <section class="highlight-section">
+    <!-- Destaque da Semana -->
+    <section class="destaque-section">
         <div class="container">
-            <h2 class="section-title">Destaque da Semana</h2>
+            <h2 class="section-title-center">Destaque da Semana</h2>
             
-            <div class="highlight-content">
-                <div class="highlight-text">
-                    <h3 class="highlight-title">Maringá Encantada</h3>
-                    <p class="highlight-description">O maior evento natalino do sul do Brasil. Luzes, shows, gastronomia e a magia do Natal tomando conta de toda a cidade. Venha viver essa experiência única com sua família.</p>
-                    <div class="highlight-details">
-                        <div class="detail-item">
-                            <span class="detail-day">25</span>
-                            <span class="detail-month">Dezembro</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Local:</span>
-                            <span class="detail-value">Praça da Catedral</span>
-                        </div>
-                        <div class="detail-item">
-                            <span class="detail-label">Tipo:</span>
-                            <span class="detail-value">Show de Luzes & Fogos</span>
-                        </div>
-                    </div>
-                    <div class="highlight-buttons">
-                        <button class="btn btn-primary">Ver Programação</button>
-                        <button class="btn btn-primary">Comprar Ingressos</button>
+            <div class="destaque-content">
+                <div class="destaque-text">
+                    <h3 class="destaque-title">Maringá Encantada</h3>
+                    <p class="destaque-description">O maior evento natalino do sul do Brasil. Luzes, shows, gastronomia e a magia do Natal tomando conta de toda a cidade. Venha viver essa experiência única com sua família.</p>
+                    <div class="destaque-buttons">
+                        <button class="btn-destaque-primary">Ver Programação</button>
+                        <button class="btn-destaque-primary">Comprar Ingressos</button>
                     </div>
                 </div>
-                <div class="highlight-image">
-                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&h=500&fit=crop" alt="Maringá Encantada - Evento Natalino">
+                <div class="destaque-image">
+                    <div class="destaque-date">
+                        <span class="date-day">25</span>
+                        <span class="date-month">Dezembro</span>
+                    </div>
+                    <div class="destaque-info">
+                        <div class="info-item">
+                            <span class="info-value">Praça da Catedral</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-value">Show de Luzes & Fogos</span>
+                        </div>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=600&fit=crop" alt="Maringá Encantada">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção Momentos em Maringá (Instagram) -->
-    <section class="moments-section">
+    <!-- Momentos em Maringá -->
+    <section class="momentos-section">
         <div class="container">
-            <div class="moments-header">
+            <div class="momentos-header">
                 <div>
-                    <span class="instagram-label">SIGA @MENUTURISTICO</span>
-                    <h2 class="section-title">Momentos em Maringá</h2>
+                    <span class="instagram-tag">SIGA @MENUTURISTICO</span>
+                    <h2 class="section-title-left">Momentos em Maringá</h2>
                 </div>
-                <button class="btn btn-outline">Ver Perfil Completo</button>
+                <button class="btn-outline-dark">Ver Perfil Completo</button>
             </div>
             
-            <div class="gallery-grid">
+            <div class="gallery-grid-4">
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=300&h=300&fit=crop" alt="Catedral de Maringá">
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=400&fit=crop" alt="Momento 1">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=300&fit=crop" alt="Paisagem de Maringá">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=400&fit=crop" alt="Momento 2">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=300&h=300&fit=crop" alt="Parque de Maringá">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=400&fit=crop" alt="Momento 3">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=300&h=300&fit=crop" alt="Vida noturna em Maringá">
+                    <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=400&h=400&fit=crop" alt="Momento 4">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Newsletter -->
-    <section class="newsletter-section">
+    <section class="newsletter-blue">
         <div class="container">
-            <div class="newsletter-content">
-                <h2>Fique por dentro das novidades</h2>
-                <p>Receba as melhores dicas e ofertas de Maringá diretamente no seu e-mail</p>
-                <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
-                    <input type="email" placeholder="Seu e-mail" required>
-                    <button type="submit" class="btn btn-primary">Assinar</button>
-                </form>
-            </div>
+            <h2 class="newsletter-title">Fique por dentro das novidades</h2>
+            <p class="newsletter-subtitle">Receba as melhores dicas e ofertas de Maringá diretamente no seu e-mail</p>
+            <form class="newsletter-form-inline" onsubmit="handleNewsletterSubmit(event)">
+                <input type="email" placeholder="Seu e-mail" required>
+                <button type="submit" class="btn-newsletter">Assinar</button>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer-dark">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
+            <div class="footer-grid">
+                <div class="footer-col">
                     <h4>Menu Turístico</h4>
                     <ul>
                         <li><a href="#eventos">Eventos</a></li>
@@ -300,7 +352,7 @@
                         <li><a href="#gastronomia">Gastronomia</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
+                <div class="footer-col">
                     <h4>Explorar</h4>
                     <ul>
                         <li><a href="#roteiros">Roteiros Turísticos</a></li>
@@ -309,7 +361,7 @@
                         <li><a href="#blog">Blog</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
+                <div class="footer-col">
                     <h4>Legal</h4>
                     <ul>
                         <li><a href="#termos">Termos de Uso</a></li>
