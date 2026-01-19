@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Menu Turístico Premium - Descubra os melhores eventos, parques, hotéis e gastronomia de Maringá">
+    <meta name="theme-color" content="#001a4d">
+    <title>Menu Turístico Premium - Maringá</title>
+    
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header/Navegação -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <!-- Logo -->
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <span>Menu Turístico</span>
+                    </a>
+                    
+                    <!-- Menu Principal -->
+                    <ul class="nav-menu">
+                        <li><a href="#eventos" class="nav-link">EVENTOS</a></li>
+                        <li><a href="#parques" class="nav-link">PARQUES</a></li>
+                        <li><a href="#hoteis" class="nav-link">HOTÉIS</a></li>
+                        <li><a href="#gastronomia" class="nav-link">GASTRONOMIA</a></li>
+                        <li><a href="#turismo" class="nav-link">TURISMO</a></li>
+                        <li><a href="#roteiros" class="nav-link">ROTEIROS</a></li>
+                    </ul>
+                    
+                    <!-- Informações e Botões -->
+                    <div class="navbar-right">
+                        <div class="weather-info">
+                            <span class="temperature">30°C</span>
+                            <span class="location">Maringá</span>
+                        </div>
+                        <div class="search-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </div>
+                        <button class="btn-login">Login</button>
+                        <button class="btn-announce">Anunciar</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+        <div class="slider-container">
+            <!-- Slide 1 -->
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200&h=600&fit=crop');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <div class="slide-label">MENU TURÍSTICO PREMIUM</div>
+                    <h1 class="slide-title">Maringá Encantada</h1>
+                    <p class="slide-description">Descubra a magia da cidade canção iluminada à noite.</p>
+                    <div class="slide-buttons">
+                        <a href="#" class="btn btn-primary">Ver Eventos</a>
+                        <button class="btn btn-secondary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                            Assistir Vídeo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=600&fit=crop');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <div class="slide-label">MENU TURÍSTICO PREMIUM</div>
+                    <h1 class="slide-title">Amanhecer Inspirador</h1>
+                    <p class="slide-description">Comece o dia explorando as belezas urbanas e naturais.</p>
+                    <div class="slide-buttons">
+                        <a href="#" class="btn btn-primary">Ver Roteiros</a>
+                        <button class="btn btn-secondary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                            Assistir Vídeo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200&h=600&fit=crop');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <div class="slide-label">MENU TURÍSTICO PREMIUM</div>
+                    <h1 class="slide-title">Natureza Exuberante</h1>
+                    <p class="slide-description">Relaxe e respire ar puro nos parques mais bonitos da região.</p>
+                    <div class="slide-buttons">
+                        <a href="#" class="btn btn-primary">Explorar Parques</a>
+                        <button class="btn btn-secondary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                            Assistir Vídeo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles do Slider -->
+            <button class="slider-btn slider-prev" onclick="changeSlide(-1)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+            </button>
+            <button class="slider-btn slider-next" onclick="changeSlide(1)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+            </button>
+
+            <!-- Indicadores -->
+            <div class="slider-indicators">
+                <button class="indicator active" onclick="goToSlide(0)"></button>
+                <button class="indicator" onclick="goToSlide(1)"></button>
+                <button class="indicator" onclick="goToSlide(2)"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Explore Maringá -->
+    <section class="explore-section">
+        <div class="container">
+            <h2 class="section-title">Explore Maringá</h2>
+            <p class="section-subtitle">Tudo o que você precisa para aproveitar o melhor da cidade em um só lugar.</p>
+            
+            <div class="cards-grid">
+                <!-- Card 1: Eventos -->
+                <div class="card card-events">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Eventos & Shows</h3>
+                    <p class="card-description">Garanta seu ingresso agora</p>
+                    <button class="btn btn-card btn-card-events">Comprar Ingressos</button>
+                </div>
+
+                <!-- Card 2: Atrações -->
+                <div class="card card-attractions">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Atrações Turísticas</h3>
+                    <p class="card-description">Reserve passeios e experiências</p>
+                    <button class="btn btn-card btn-card-attractions">Reservar Passeio</button>
+                </div>
+
+                <!-- Card 3: Hotéis -->
+                <div class="card card-hotels">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 4v16H6V4m0 6h12M6 10h12"></path>
+                            <circle cx="8" cy="7" r="1"></circle>
+                            <circle cx="14" cy="7" r="1"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Hotéis Premium</h3>
+                    <p class="card-description">Pague sua estadia online</p>
+                    <button class="btn btn-card btn-card-hotels">Reservar Quarto</button>
+                </div>
+
+                <!-- Card 4: Gastronomia -->
+                <div class="card card-gastronomy">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 2v7c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2V2"></path>
+                            <path d="M7 2v7"></path>
+                            <path d="M13 2v7c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2V2"></path>
+                            <path d="M17 2v7"></path>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">Gastronomia</h3>
+                    <p class="card-description">Compre vouchers e reserve</p>
+                    <button class="btn btn-card btn-card-gastronomy">Comprar Voucher</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Destaque da Semana -->
+    <section class="highlight-section">
+        <div class="container">
+            <h2 class="section-title">Destaque da Semana</h2>
+            
+            <div class="highlight-content">
+                <div class="highlight-text">
+                    <h3 class="highlight-title">Maringá Encantada</h3>
+                    <p class="highlight-description">O maior evento natalino do sul do Brasil. Luzes, shows, gastronomia e a magia do Natal tomando conta de toda a cidade. Venha viver essa experiência única com sua família.</p>
+                    <div class="highlight-details">
+                        <div class="detail-item">
+                            <span class="detail-day">25</span>
+                            <span class="detail-month">Dezembro</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Local:</span>
+                            <span class="detail-value">Praça da Catedral</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Tipo:</span>
+                            <span class="detail-value">Show de Luzes & Fogos</span>
+                        </div>
+                    </div>
+                    <div class="highlight-buttons">
+                        <button class="btn btn-primary">Ver Programação</button>
+                        <button class="btn btn-primary">Comprar Ingressos</button>
+                    </div>
+                </div>
+                <div class="highlight-image">
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&h=500&fit=crop" alt="Maringá Encantada - Evento Natalino">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Momentos em Maringá (Instagram) -->
+    <section class="moments-section">
+        <div class="container">
+            <div class="moments-header">
+                <div>
+                    <span class="instagram-label">SIGA @MENUTURISTICO</span>
+                    <h2 class="section-title">Momentos em Maringá</h2>
+                </div>
+                <button class="btn btn-outline">Ver Perfil Completo</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=300&h=300&fit=crop" alt="Catedral de Maringá">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=300&fit=crop" alt="Paisagem de Maringá">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=300&h=300&fit=crop" alt="Parque de Maringá">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=300&h=300&fit=crop" alt="Vida noturna em Maringá">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Fique por dentro das novidades</h2>
+                <p>Receba as melhores dicas e ofertas de Maringá diretamente no seu e-mail</p>
+                <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+                    <input type="email" placeholder="Seu e-mail" required>
+                    <button type="submit" class="btn btn-primary">Assinar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Menu Turístico</h4>
+                    <ul>
+                        <li><a href="#eventos">Eventos</a></li>
+                        <li><a href="#parques">Parques</a></li>
+                        <li><a href="#hoteis">Hotéis</a></li>
+                        <li><a href="#gastronomia">Gastronomia</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Explorar</h4>
+                    <ul>
+                        <li><a href="#roteiros">Roteiros Turísticos</a></li>
+                        <li><a href="#historicos">Pontos Históricos</a></li>
+                        <li><a href="#noturna">Vida Noturna</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#termos">Termos de Uso</a></li>
+                        <li><a href="#privacidade">Privacidade</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Menu Turístico Premium. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
